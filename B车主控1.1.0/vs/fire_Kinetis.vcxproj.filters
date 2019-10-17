@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<ItemGroup>
+		<Filter Include="源文件\App">
+			<UniqueIdentifier>{1c26ac6b-3ca8-434c-611b-bdc4992eca28}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="源文件\Board">
+			<UniqueIdentifier>{935374f8-217e-4f18-52cc-094539d601b0}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="源文件\Chip">
+			<UniqueIdentifier>{81b57d38-0478-424f-4ba9-a34569f8eb10}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="源文件\LIB">
+			<UniqueIdentifier>{dc4ae414-f82b-4c1a-449d-29323b14624b}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="源文件\LIB\CMSIS">
+			<UniqueIdentifier>{78cb7843-5579-40e2-5780-ba2e9f8681bc}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="源文件">
+			<UniqueIdentifier>{7cd42e1b-b973-4b87-69bf-38f173544e9c}</UniqueIdentifier>
+		</Filter>
+	</ItemGroup>
+	<ItemGroup>
+		<ClCompile Include="..\App\CL_FUN.c">
+			<Filter>源文件\App</Filter>
+		</ClCompile>
+		<ClCompile Include="..\App\Control.c">
+			<Filter>源文件\App</Filter>
+		</ClCompile>
+		<ClCompile Include="..\App\DebugFunction.c">
+			<Filter>源文件\App</Filter>
+		</ClCompile>
+		<ClCompile Include="..\App\Drive.c">
+			<Filter>源文件\App</Filter>
+		</ClCompile>
+		<ClCompile Include="..\App\Encode.c">
+			<Filter>源文件\App</Filter>
+		</ClCompile>
+		<ClCompile Include="..\App\Get_UART.c">
+			<Filter>源文件\App</Filter>
+		</ClCompile>
+		<ClCompile Include="..\App\i2c.c">
+			<Filter>源文件\App</Filter>
+		</ClCompile>
+		<ClCompile Include="..\App\main.c">
+			<Filter>源文件\App</Filter>
+		</ClCompile>
+		<ClCompile Include="..\App\MPU6050.c">
+			<Filter>源文件\App</Filter>
+		</ClCompile>
+		<ClCompile Include="..\App\MPU6050Drive.c">
+			<Filter>源文件\App</Filter>
+		</ClCompile>
+		<ClCompile Include="..\App\My_I2C.c">
+			<Filter>源文件\App</Filter>
+		</ClCompile>
+		<ClCompile Include="..\App\pid.c">
+			<Filter>源文件\App</Filter>
+		</ClCompile>
+		<ClCompile Include="..\App\PIT.c">
+			<Filter>源文件\App</Filter>
+		</ClCompile>
+		<ClCompile Include="..\App\Recognition.c">
+			<Filter>源文件\App</Filter>
+		</ClCompile>
+		<ClCompile Include="..\Board\src\FIRE_key.c">
+			<Filter>源文件\Board</Filter>
+		</ClCompile>
+		<ClCompile Include="..\Board\src\FIRE_MK60_conf.c">
+			<Filter>源文件\Board</Filter>
+		</ClCompile>
+		<ClCompile Include="..\Board\src\FIRE_MMA7455.c">
+			<Filter>源文件\Board</Filter>
+		</ClCompile>
+		<ClCompile Include="..\Board\src\FIRE_NRF24L0.c">
+			<Filter>源文件\Board</Filter>
+		</ClCompile>
+		<ClCompile Include="..\Board\src\FIRE_SCCB.c">
+			<Filter>源文件\Board</Filter>
+		</ClCompile>
+		<ClCompile Include="..\Board\src\lcd.c">
+			<Filter>源文件\Board</Filter>
+		</ClCompile>
+		<ClCompile Include="..\Board\src\SYN6288.c">
+			<Filter>源文件\Board</Filter>
+		</ClCompile>
+		<ClCompile Include="..\Board\src\UART.c">
+			<Filter>源文件\Board</Filter>
+		</ClCompile>
+		<ClCompile Include="..\Chip\src\IIC.c">
+			<Filter>源文件\Chip</Filter>
+		</ClCompile>
+		<ClCompile Include="..\Chip\src\misc.c">
+			<Filter>源文件\Chip</Filter>
+		</ClCompile>
+		<ClCompile Include="..\Chip\src\MK60_adc.c">
+			<Filter>源文件\Chip</Filter>
+		</ClCompile>
+		<ClCompile Include="..\Chip\src\MK60_dma.c">
+			<Filter>源文件\Chip</Filter>
+		</ClCompile>
+		<ClCompile Include="..\Chip\src\MK60_DWT.c">
+			<Filter>源文件\Chip</Filter>
+		</ClCompile>
+		<ClCompile Include="..\Chip\src\MK60_flash.c">
+			<Filter>源文件\Chip</Filter>
+		</ClCompile>
+		<ClCompile Include="..\Chip\src\MK60_ftm.c">
+			<Filter>源文件\Chip</Filter>
+		</ClCompile>
+		<ClCompile Include="..\Chip\src\MK60_gpio.c">
+			<Filter>源文件\Chip</Filter>
+		</ClCompile>
+		<ClCompile Include="..\Chip\src\MK60_lptmr.c">
+			<Filter>源文件\Chip</Filter>
+		</ClCompile>
+		<ClCompile Include="..\Chip\src\MK60_mcg.c">
+			<Filter>源文件\Chip</Filter>
+		</ClCompile>
+		<ClCompile Include="..\Chip\src\MK60_PIT.c">
+			<Filter>源文件\Chip</Filter>
+		</ClCompile>
+		<ClCompile Include="..\Chip\src\MK60_port.c">
+			<Filter>源文件\Chip</Filter>
+		</ClCompile>
+		<ClCompile Include="..\Chip\src\MK60_spi.c">
+			<Filter>源文件\Chip</Filter>
+		</ClCompile>
+		<ClCompile Include="..\Chip\src\MK60_SysTick.c">
+			<Filter>源文件\Chip</Filter>
+		</ClCompile>
+		<ClCompile Include="..\Chip\src\MK60_uart.c">
+			<Filter>源文件\Chip</Filter>
+		</ClCompile>
+		<ClCompile Include="..\Chip\src\MK60_wdog.c">
+			<Filter>源文件\Chip</Filter>
+		</ClCompile>
+		<ClCompile Include="..\Chip\src\IAR\system_MK60DZ10.c">
+			<Filter>源文件\Chip</Filter>
+		</ClCompile>
+		<ClCompile Include="..\Chip\src\vectors.c">
+			<Filter>源文件\Chip</Filter>
+		</ClCompile>
+	</ItemGroup>
+	<ItemGroup>
+		<ClInclude Include="..\App\Inc\CL_FUN.h">
+			<Filter>源文件\App</Filter>
+		</ClInclude>
+		<ClInclude Include="..\App\Inc\Control.h">
+			<Filter>源文件\App</Filter>
+		</ClInclude>
+		<ClInclude Include="..\App\Inc\DebugFunction.h">
+			<Filter>源文件\App</Filter>
+		</ClInclude>
+		<ClInclude Include="..\App\Inc\Drive.h">
+			<Filter>源文件\App</Filter>
+		</ClInclude>
+		<ClInclude Include="..\App\Inc\Encode.h">
+			<Filter>源文件\App</Filter>
+		</ClInclude>
+		<ClInclude Include="..\App\Inc\Get_UART.h">
+			<Filter>源文件\App</Filter>
+		</ClInclude>
+		<ClInclude Include="..\App\Inc\i2c.h">
+			<Filter>源文件\App</Filter>
+		</ClInclude>
+		<ClInclude Include="..\App\main.h">
+			<Filter>源文件\App</Filter>
+		</ClInclude>
+		<ClInclude Include="..\App\Inc\MPU6050.h">
+			<Filter>源文件\App</Filter>
+		</ClInclude>
+		<ClInclude Include="..\App\Inc\MPU6050Drive.h">
+			<Filter>源文件\App</Filter>
+		</ClInclude>
+		<ClInclude Include="..\App\Inc\My_I2C.h">
+			<Filter>源文件\App</Filter>
+		</ClInclude>
+		<ClInclude Include="..\App\Inc\pid.h">
+			<Filter>源文件\App</Filter>
+		</ClInclude>
+		<ClInclude Include="..\App\PIT.h">
+			<Filter>源文件\App</Filter>
+		</ClInclude>
+		<ClInclude Include="..\App\Inc\Recognition.h">
+			<Filter>源文件\App</Filter>
+		</ClInclude>
+		<ClInclude Include="..\Board\inc\FIRE_MK60_conf.h">
+			<Filter>源文件\Board</Filter>
+		</ClInclude>
+		<ClInclude Include="..\Chip\inc\common.h">
+			<Filter>源文件\Chip</Filter>
+		</ClInclude>
+	</ItemGroup>
+	<ItemGroup>
+		<None Include="..\Board\src\FIRE_LED.C">
+			<Filter>源文件\Board</Filter>
+		</None>
+		<None Include="..\Chip\src\IAR\startup_MK60DZ10.s">
+			<Filter>源文件\Chip</Filter>
+		</None>
+		<None Include="..\Lib\CMSIS\iar_cortexM4l_math.a">
+			<Filter>源文件\LIB\CMSIS</Filter>
+		</None>
+	</ItemGroup>
+</Project>
