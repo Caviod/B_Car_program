@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<ItemGroup Label="ProjectConfigurations">
+		<ProjectConfiguration Include="FX15_Debug|Win32">
+			<Configuration>FX15_Debug</Configuration>
+			<Platform>Win32</Platform>
+		</ProjectConfiguration>
+		<ProjectConfiguration Include="FX15_Release|Win32">
+			<Configuration>FX15_Release</Configuration>
+			<Platform>Win32</Platform>
+		</ProjectConfiguration>
+		<ProjectConfiguration Include="DZ10_Debug|Win32">
+			<Configuration>DZ10_Debug</Configuration>
+			<Platform>Win32</Platform>
+		</ProjectConfiguration>
+		<ProjectConfiguration Include="DZ10_Release|Win32">
+			<Configuration>DZ10_Release</Configuration>
+			<Platform>Win32</Platform>
+		</ProjectConfiguration>
+	</ItemGroup>
+	<ItemGroup>
+		<ClCompile Include="..\App\Control.c"></ClCompile>
+		<ClCompile Include="..\App\DebugFunction.c"></ClCompile>
+		<ClCompile Include="..\App\Drive.c"></ClCompile>
+		<ClCompile Include="..\App\Encode.c"></ClCompile>
+		<ClCompile Include="..\App\Get_UART.c"></ClCompile>
+		<ClCompile Include="..\App\i2c.c"></ClCompile>
+		<ClCompile Include="..\App\main.c"></ClCompile>
+		<ClCompile Include="..\App\MPU6050.c"></ClCompile>
+		<ClCompile Include="..\App\pid.c"></ClCompile>
+		<ClCompile Include="..\App\PIT.c"></ClCompile>
+		<ClCompile Include="..\App\Recognition.c"></ClCompile>
+		<ClCompile Include="..\Board\src\FIRE_key.c"></ClCompile>
+		<ClCompile Include="..\Board\src\FIRE_MK60_conf.c"></ClCompile>
+		<ClCompile Include="..\Board\src\FIRE_MMA7455.c"></ClCompile>
+		<ClCompile Include="..\Board\src\FIRE_NRF24L0.c"></ClCompile>
+		<ClCompile Include="..\Board\src\FIRE_SCCB.c"></ClCompile>
+		<ClCompile Include="..\Board\src\lcd.c"></ClCompile>
+		<ClCompile Include="..\Board\src\SYN6288.c"></ClCompile>
+		<ClCompile Include="..\Board\src\UART.c"></ClCompile>
+		<ClCompile Include="..\Chip\src\IIC.c"></ClCompile>
+		<ClCompile Include="..\Chip\src\misc.c"></ClCompile>
+		<ClCompile Include="..\Chip\src\MK60_adc.c"></ClCompile>
+		<ClCompile Include="..\Chip\src\MK60_dma.c"></ClCompile>
+		<ClCompile Include="..\Chip\src\MK60_DWT.c"></ClCompile>
+		<ClCompile Include="..\Chip\src\MK60_flash.c"></ClCompile>
+		<ClCompile Include="..\Chip\src\MK60_ftm.c"></ClCompile>
+		<ClCompile Include="..\Chip\src\MK60_gpio.c"></ClCompile>
+		<ClCompile Include="..\Chip\src\MK60_lptmr.c"></ClCompile>
+		<ClCompile Include="..\Chip\src\MK60_mcg.c"></ClCompile>
+		<ClCompile Include="..\Chip\src\MK60_PIT.c"></ClCompile>
+		<ClCompile Include="..\Chip\src\MK60_port.c"></ClCompile>
+		<ClCompile Include="..\Chip\src\MK60_spi.c"></ClCompile>
+		<ClCompile Include="..\Chip\src\MK60_SysTick.c"></ClCompile>
+		<ClCompile Include="..\Chip\src\MK60_uart.c"></ClCompile>
+		<ClCompile Include="..\Chip\src\MK60_wdog.c"></ClCompile>
+		<ClCompile Include="..\Chip\src\IAR\system_MK60DZ10.c"></ClCompile>
+		<ClCompile Include="..\Chip\src\vectors.c"></ClCompile>
+	</ItemGroup>
+	<ItemGroup>
+		<ClInclude Include="..\App\Inc\Control.h"></ClInclude>
+		<ClInclude Include="..\App\Inc\DebugFunction.h"></ClInclude>
+		<ClInclude Include="..\App\Inc\Drive.h"></ClInclude>
+		<ClInclude Include="..\App\Inc\Encode.h"></ClInclude>
+		<ClInclude Include="..\App\Inc\Get_UART.h"></ClInclude>
+		<ClInclude Include="..\App\Inc\i2c.h"></ClInclude>
+		<ClInclude Include="..\App\main.h"></ClInclude>
+		<ClInclude Include="..\App\Inc\MPU6050.h"></ClInclude>
+		<ClInclude Include="..\App\Inc\pid.h"></ClInclude>
+		<ClInclude Include="..\App\PIT.h"></ClInclude>
+		<ClInclude Include="..\App\Inc\Recognition.h"></ClInclude>
+		<ClInclude Include="..\Board\inc\FIRE_MK60_conf.h"></ClInclude>
+		<ClInclude Include="..\Chip\inc\common.h"></ClInclude>
+	</ItemGroup>
+	<ItemGroup>
+		<None Include="..\Board\src\FIRE_LED.C"></None>
+		<None Include="..\Chip\src\IAR\startup_MK60DZ10.s"></None>
+		<None Include="..\Lib\CMSIS\iar_cortexM4l_math.a"></None>
+	</ItemGroup>
+	<PropertyGroup Label="Globals">
+		<ProjectGuid>2f4f7f62-0a18-48ef-4956-78359a0f14dd</ProjectGuid>
+		<Keyword>Win32Proj</Keyword>
+		<RootNamespace>fire_Kinetis</RootNamespace>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='FX15_Debug|Win32'">
+		<LinkIncremental>true</LinkIncremental>
+		<IncludePath>..\App\Inc;..\Board\Inc;..\Chip\inc;..\Chip\inc\IAR;..\Chip\inc\kinetis;..\Lib\CMSIS\Inc</IncludePath>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='FX15_Release|Win32'">
+		<LinkIncremental>true</LinkIncremental>
+		<IncludePath>..\App\Inc;..\Board\Inc;..\Chip\inc;..\Chip\inc\IAR;..\Chip\inc\kinetis;..\Lib\CMSIS\Inc</IncludePath>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DZ10_Debug|Win32'">
+		<LinkIncremental>true</LinkIncremental>
+		<IncludePath>..\App\Inc;..\Board\Inc;..\Chip\inc;..\Chip\inc\IAR;..\Chip\inc\kinetis;..\Lib\CMSIS\Inc</IncludePath>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DZ10_Release|Win32'">
+		<LinkIncremental>true</LinkIncremental>
+		<IncludePath>..\App\Inc;..\Board\Inc;..\Chip\inc;..\Chip\inc\IAR;..\Chip\inc\kinetis;..\Lib\CMSIS\Inc</IncludePath>
+	</PropertyGroup>
+	<ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='FX15_Debug|Win32'">
+		<ClCompile>
+			<PrecompiledHeader></PrecompiledHeader>
+			<WarningLevel>Level3</WarningLevel>
+			<Optimization>Disabled</Optimization>
+			<PreprocessorDefinitions>IAR;DEBUG;ARM_MATH_CM4;MK60F15</PreprocessorDefinitions>
+		</ClCompile>
+		<Link>
+			<SubSystem></SubSystem>
+			<GenerateDebugInformation>false</GenerateDebugInformation>
+		</Link>
+	</ItemDefinitionGroup>
+	<ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='FX15_Release|Win32'">
+		<ClCompile>
+			<PrecompiledHeader></PrecompiledHeader>
+			<WarningLevel>Level3</WarningLevel>
+			<Optimization>Disabled</Optimization>
+			<PreprocessorDefinitions>NDEBUG;IAR;ARM_MATH_CM4;MK60F15</PreprocessorDefinitions>
+		</ClCompile>
+		<Link>
+			<SubSystem></SubSystem>
+			<GenerateDebugInformation>false</GenerateDebugInformation>
+		</Link>
+	</ItemDefinitionGroup>
+	<ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DZ10_Debug|Win32'">
+		<ClCompile>
+			<PrecompiledHeader></PrecompiledHeader>
+			<WarningLevel>Level3</WarningLevel>
+			<Optimization>Disabled</Optimization>
+			<PreprocessorDefinitions>IAR;DEBUG;ARM_MATH_CM4;MK60DZ10</PreprocessorDefinitions>
+		</ClCompile>
+		<Link>
+			<SubSystem></SubSystem>
+			<GenerateDebugInformation>false</GenerateDebugInformation>
+		</Link>
+	</ItemDefinitionGroup>
+	<ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DZ10_Release|Win32'">
+		<ClCompile>
+			<PrecompiledHeader></PrecompiledHeader>
+			<WarningLevel>Level3</WarningLevel>
+			<Optimization>Disabled</Optimization>
+			<PreprocessorDefinitions>NDEBUG;IAR;ARM_MATH_CM4;MK60DZ10</PreprocessorDefinitions>
+		</ClCompile>
+		<Link>
+			<SubSystem></SubSystem>
+			<GenerateDebugInformation>false</GenerateDebugInformation>
+		</Link>
+	</ItemDefinitionGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props"></Import>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.props"></Import>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets"></Import>
+</Project>
