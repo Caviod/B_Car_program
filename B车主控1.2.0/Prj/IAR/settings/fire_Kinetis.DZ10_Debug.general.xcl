@@ -1,0 +1,17 @@
+"E:\iar\arm\bin\armproc.dll" 
+
+"E:\iar\arm\bin\armJET.dll" 
+
+"Z:\Github\Git\B车主控1.2.0\Prj\IAR\DZ10_Debug\Exe\fire_Kinetis.out" 
+
+--plugin="E:\iar\arm\bin\armbat.dll" 
+
+--device_macro="E:\iar\arm\config\debugger\NXP\Kxx.dmac" 
+
+--device_macro="E:\iar\arm\config\debugger\NXP\Kxx_Trace.dmac" 
+
+--flash_loader="E:\iar\arm\config\flashloader\NXP\FlashK60Dxxx128K.board" 
+
+
+
+

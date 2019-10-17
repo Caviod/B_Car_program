@@ -1,0 +1,17 @@
+"E:\iar\arm\bin\armproc.dll" 
+
+"E:\iar\arm\bin\armjlink2.dll" 
+
+"Z:\秦堂皓的车\SMU_K60_Lib_1.0_For_Balance_MPU6050_X\Prj\IAR\FX15_Debug\Exe\fire_Kinetis.out" 
+
+--plugin="E:\iar\arm\bin\armbat.dll" 
+
+--device_macro="E:\iar\arm\config\debugger\NXP\Kxx.dmac" 
+
+--device_macro="E:\iar\arm\config\debugger\NXP\Kxx_Trace.dmac" 
+
+--flash_loader="E:\iar\arm\config\flashloader\Freescale\FlashK60Fxxx128K.board" 
+
+
+
+

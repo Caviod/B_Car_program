@@ -1,0 +1,17 @@
+"E:\iar\arm\bin\armproc.dll" 
+
+"E:\iar\arm\bin\armjlink2.dll" 
+
+"C:\Users\cyfch\Desktop\直立框架\Prj\IAR\FX15_Release\Exe\fire_Kinetis.out" 
+
+--plugin="E:\iar\arm\bin\armbat.dll" 
+
+--device_macro="E:\iar\arm\config\debugger\NXP\Kxx.dmac" 
+
+--device_macro="E:\iar\arm\config\debugger\NXP\Kxx_Trace.dmac" 
+
+--flash_loader="E:\iar\arm\config\flashloader\Freescale\FlashK60Fxxx128K.board" 
+
+
+
+
